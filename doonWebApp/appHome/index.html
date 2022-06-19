@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>doon | Login</title>
+    <title>doon | Home</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -34,9 +34,21 @@
             <div class="welcomeHeader">
                 <div class="welcomeRectangle">
 
-                    <p>Welcome, <strong>user!</strong></p>
+                    <div class="dropdown">
+
+                        <button class="dropbtn">Welcome, <strong>user!</strong></button>
+
+                            <div class="dropdown-content">
+
+                                <a href="../appLogin/index.html">Logout</a>
+
+                            </div>
+
+                    </div>
+
 
                 </div>
+
             </div>
 
             <div class="dateAndTime">
@@ -50,10 +62,7 @@
 
                     document.getElementById("time").innerHTML = dt.toLocaleTimeString();
 
-                
                 </script>
-                    
-                    
 
             </div>
 
@@ -85,11 +94,13 @@
 
                 </div>
 
+            <a href="../appBooking/index.html">
             <div class="bookButton">
 
                 <p><strong>Book a ride!</strong></p>
 
             </div>
+            </a>
         
         </div>
 
