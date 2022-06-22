@@ -26,7 +26,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="result.js" ></script>
+    <script type="text/javascript" src="result.js"></script>
     
 
 </head>
@@ -50,28 +50,34 @@
 
             <div class="generateServices">
 
-                <form action="submit.jsp">
+                <form action="/Doon_DWP/appLooking/index.html" method="POST">
 
-                    <p type="text" id="whereFrom">📍 From: <span id="result-whereFrom" /></p> <!-- INSERT LOCATION AFTER FROM: USING SQL DATA-->
-                    <p type="text" id="whereTo"> 📍 To: <span id="result-whereTo" /></</p><br><br> <!-- INSERT LOCATION AFTER TO: USING SQL DATA-->
+                    <p type="text" id="whereFrom">📍 From: <span id="result-whereFrom" /></p>
+                    <p type="text" id="whereTo">📍 To: <span id="result-whereTo" /></</p>
 
                     <div class="serviceProvidersList">
 
-                        <h1>Service Provider | Price</h1>
+                        <label for="serviceProvider"><strong>Choose your Service Provider</strong></label><br>
+                        <select name="serviceProvider" id="serviceProvider">
+                          <option value="OWTO">OWTO</option>
+                          <option value="Grab">Grab</option>
+                        </select>
+                        
+                        <p><strong>OWTO:</strong> <span id="priceOWTO"/></p>
+                        <p><strong>Grab:</strong> <span id="priceGRAB"/></p>
 
-                            <label class="container"><strong>OWTO</strong> | <!-- Insert price value here-->
+						<script>
+                      
+                      			let priceOWTO = Math.floor((Math.random() * 300) + 100);
 
-                                <input type="radio" checked="checked" name="radio">
-                                <span class="checkmark"></span>
+                      				document.getElementById("priceOWTO").innerHTML = priceOWTO + " PhP";
+                    
+                  				let priceGRAB = Math.floor((Math.random() * 300) + 100);
 
-                            </label>
-
-                            <label class="container"><strong>Grab</strong>  | <!-- Insert price value here-->
-
-                                <input type="radio" name="radio">
-                                <span class="checkmark"></span>
-
-                            </label>
+                    				document.getElementById("priceGRAB").innerHTML = priceGRAB + " PhP";
+                        
+                      	</script>
+                        
 
                     </div>
 
