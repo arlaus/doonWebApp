@@ -38,23 +38,62 @@
             <div class="serviceFound">
 
                 <p>Service Found!</p>
+                
+                <br/>
+                
+                <p>Plate Number: <strong><span id="plateNumber" /></strong></p>
+                <script>
+                
+                var myArray = [
+                	  "VIP 001",
+                	  "XYZ 239",
+                	  "LOL 193",
+                	  "TRY 300",
+                	  "APC 213",
+                	  "ANC 999"
+                	];
+
+                var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+                
+                let plateNumber = randomItem;
+
+                document.getElementById("plateNumber").innerHTML = plateNumber;
+                
+                </script>
+                
+                                <p>Driver Name: <strong><span id="driverName" /></strong></p>
+                <script>
+                
+                var myArray = [
+                	  "Joaqs Dotcom",
+                	  "Jwaine Firenation",
+                	  "Carl Byers",
+                	  "Gelo Wings",
+                	  
+                	  
+                	];
+
+                var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+                
+                let driverName = randomItem;
+
+                document.getElementById("driverName").innerHTML = driverName;
+                
+                </script>
 
             </div>
 
             <div class="generateServiceFound">
+            
+                <script>
 
-                <!--
-                    Hello, Joaqs! This is where you will be putting the code for the serviceFound.
-                    The idea for this is that the page will be retrieving the following data from the SQL database:
-                    - Service Provider (for example: Grab, OWTO)
-                    - Driver Name (for example: Joax Dotcom, Carl Byers)
-                    - Plate Number (for example: VIP 1234, FLY 8978)
+        setTimeout(function () {
+        window.location.href= '../appHome/index.html'; // the redirect goes here
 
-                    Please use the following in your code to easily help in designing the front-end:
-                    class="classNameHere" - to be used in multiple elements (more information: https://www.w3schools.com/html/html_classes.asp)
-                    id="idNameHere" -  to be used in one single element (more information: https://www.w3schools.com/html/html_id.asp)
+        },5000);
 
-                -->
+    </script>
+
 
             </div>
 
