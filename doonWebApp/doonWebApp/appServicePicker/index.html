@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>doon | Booking</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta charset="utf-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <div class="rectangle">
+
+        <div class="doonServicePicker">
+
+            <div class="servicePickerHeader">
+
+                <div class="servicePickerRectangle">
+
+                    <p><strong>Choose your Service!</strong></p>
+
+                </div>
+
+            </div>
+
+
+            <div class="generateServices">
+
+                <form action="submit.jsp">
+
+                    <input type="text" id="email" name="email" placeholder="" value="📍 From: " disabled=""><br> <!-- INSERT LOCATION AFTER FROM: USING SQL DATA-->
+                    <input type="text" id="email" name="email" placeholder="" value="📍 To: " disabled=""><br><br> <!-- INSERT LOCATION AFTER TO: USING SQL DATA-->
+
+                    <div class="serviceProvidersList">
+
+                        <h1>Service Provider | Price</h1>
+
+                            <label class="container"><strong>OWTO</strong> | <!-- Insert price value here-->
+
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+
+                            </label>
+
+                            <label class="container"><strong>Grab</strong>  | <!-- Insert price value here-->
+
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+
+                            </label>
+
+                    </div>
+
+                    <input type="submit" value="Select Service">
+        
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
